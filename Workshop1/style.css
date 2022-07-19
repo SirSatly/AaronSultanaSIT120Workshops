@@ -1,0 +1,24 @@
+body {
+    text-align: center;
+    background-color: black;
+}
+
+h1
+{
+    margin: 20px;
+    padding: 10px;
+    background-color:rgb(152, 120, 41);
+    color: rgb(53, 7, 236);
+}
+
+p 
+{
+    margin-top: 50px;
+    color: antiquewhite;
+}
+
+img
+{
+    margin-left: 75%;
+    margin-top: 25%;
+}
