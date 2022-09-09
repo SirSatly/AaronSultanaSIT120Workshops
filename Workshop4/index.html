@@ -1,0 +1,46 @@
+<head>
+    <!-- <style>
+        .gridContent {
+            display: flex;
+        }
+    </style> -->
+</head>
+
+<body>
+    <div id="app">
+        <h1>{{message}}</h1>
+
+        <label>condition</label>
+        <input type="checkbox" v-model="condition">
+
+        <div v-if="condition"><p>The condition is true</p></div>
+        <div v-else><p>The condition is not true</p></div>
+
+        <label>Show content 1</label>
+        <input type="checkbox" v-model="show1">
+
+        <label>Show content 2</label>
+        <input type="checkbox" v-model="show2">
+        <div id="gridContent">
+            
+            <div v-show="show1"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eu molestie nibh. Cras malesuada sodales odio, sit amet sagittis quam volutpat aliquet. Pellentesque in vehicula arcu. In fermentum eros quis efficitur maximus. Aenean nulla libero, pharetra id felis et, aliquam semper nunc. Sed pellentesque nec magna vel eleifend. Ut eu ipsum nec augue gravida luctus. Aliquam dictum suscipit neque.
+
+                Maecenas tincidunt urna ut diam accumsan ultricies. Fusce bibendum magna urna, ut facilisis lacus iaculis eu. Aliquam bibendum ex vitae pretium tempor. Cras at libero dignissim, imperdiet nunc efficitur, rutrum massa. Vestibulum finibus imperdiet massa. Ut tempus varius nisl, eu vestibulum ipsum aliquet luctus. In at ornare purus. Etiam mattis sem ut urna interdum placerat. Praesent nec metus et nulla imperdiet vestibulum.
+                
+                Duis sollicitudin augue at neque posuere, eget ultricies mauris aliquam. Proin justo nulla, volutpat maximus erat quis, semper ornare metus. Proin purus leo, tempus at dolor id, consequat sollicitudin arcu. Proin scelerisque lectus ac urna convallis, sed porttitor nulla tempus. Mauris nec pellentesque nisi. Nunc malesuada quis dui et aliquam. Pellentesque vel nibh tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Cras vitae justo vel nibh vehicula iaculis.
+            </p></div>
+
+            <div v-show="show2"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eu molestie nibh. Cras malesuada sodales odio, sit amet sagittis quam volutpat aliquet. Pellentesque in vehicula arcu. In fermentum eros quis efficitur maximus. Aenean nulla libero, pharetra id felis et, aliquam semper nunc. Sed pellentesque nec magna vel eleifend. Ut eu ipsum nec augue gravida luctus. Aliquam dictum suscipit neque.
+
+                Maecenas tincidunt urna ut diam accumsan ultricies. Fusce bibendum magna urna, ut facilisis lacus iaculis eu. Aliquam bibendum ex vitae pretium tempor. Cras at libero dignissim, imperdiet nunc efficitur, rutrum massa. Vestibulum finibus imperdiet massa. Ut tempus varius nisl, eu vestibulum ipsum aliquet luctus. In at ornare purus. Etiam mattis sem ut urna interdum placerat. Praesent nec metus et nulla imperdiet vestibulum.
+                
+                Duis sollicitudin augue at neque posuere, eget ultricies mauris aliquam. Proin justo nulla, volutpat maximus erat quis, semper ornare metus. Proin purus leo, tempus at dolor id, consequat sollicitudin arcu. Proin scelerisque lectus ac urna convallis, sed porttitor nulla tempus. Mauris nec pellentesque nisi. Nunc malesuada quis dui et aliquam. Pellentesque vel nibh tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Cras vitae justo vel nibh vehicula iaculis.
+            </p></div>
+        </div>
+
+        <li v-for="name in names">{{name}}</li>
+    </div>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2.7.8/dist/vue.js"></script>
+<script src="script.js"></script>

@@ -1,0 +1,57 @@
+<body>
+    <div id="app">
+        <label>Name</label>
+        <input type="text" v-model="name">
+        <br>
+        <label>Password</label>
+        <input type="password" v-model="password">
+        <br>
+        <label>Email</label>
+        <input type="email" v-model="email">
+
+        <br><br>
+
+        <p>
+            Name: {{name}} <br>
+            Password: {{password}} <br>
+            Email: {{email}}
+        </p>
+
+        <br><br>
+   
+        <input type="checkbox" value="Apple" v-model="checkedValues">
+        <label>Apple</label>
+        <input type="checkbox" value="Orange" v-model="checkedValues">
+        <label>Orange</label>
+        <input type="checkbox" value="Grapes" v-model="checkedValues">
+        <label>Grapes</label>
+
+        <br>
+        <p>The checked values are: {{checkedValues}}</p>
+
+        <br><br>
+
+        <select v-model="selected">
+            <option disabled value="">Please Select One</option>
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+        </select>
+        <br>
+        <p>The selected option is {{selected}}</p>
+
+        <br><br>
+
+        <select v-model="dynamicallySelected">
+            <option v-for="num in dynamicValues" v-bind:value="num">{{num}}</option>
+        </select>
+        <br>
+        <p>The dynamically selected option is {{dynamicallySelected}}</p>
+
+        <input type="number" v-model.number="age">
+        {{calcuate}}
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.8/dist/vue.js"></script>
+    <script src="script.js"></script>
+</body>

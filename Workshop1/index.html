@@ -1,11 +1,52 @@
 <head>
     <title>Test Project</title>
     <link rel="stylesheet" href="style.css">
+
+    <style>
+        #columnedContent {
+            column-count: 2;
+            column-gap: 50px;
+            column-rule: double;
+            column-rule-color: blue;
+            margin-top: 50px;
+        }
+    </style>
 </head>
 <body>
-    <h1>My project</h1>
+    <h1 id="demo">My project</h1>
     <p>This is some example text with <b>Bold,</b><i> Italic<i> and <u>Underline</u> text</p>
+
+
+    <button type="button" onclick="test()">Java script Button</button>
+
+    <section id="columnedContent">
+        <table>
+            <tr>
+                <th>1</th>
+                <th>2</th>
+                <th>3</th>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+            </tr>
+        </table>
+
+        <div id="app">
+            <to-do></to-do>
+        </div>
+    </section>
+
     <a href="https://www.deakin.edu.au/">
-    <img src="deakin.png" alt="test">
+    <img style="margin-left: 75%; margin-top: 25%" src="deakin.png" alt="test">
     </a>
 </body>
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2.7.8/dist/vue.js"></script>
+<script type="text/javascript" src="script.js"></script>

@@ -11,8 +11,14 @@ h1
     color: rgb(53, 7, 236);
 }
 
-p, h2, label, table 
+p 
 {
     margin-top: 50px;
     color: antiquewhite;
+}
+
+img
+{
+    margin-left: 75%;
+    margin-top: 25%;
 }

@@ -1,0 +1,32 @@
+<head>
+    
+</head>
+
+
+<body>
+    <div id="globalComponantApp">
+        <global-componant></global-componant>
+        <local-componant></local-componant>
+    </div>
+
+    <div id="localComponantApp">
+        <global-componant></global-componant>
+        <local-componant></local-componant>
+    </div>
+
+    <div id="app">
+        <props-componant message="I use props"></props-componant>
+        <events-componant @event="message = 'I use events'"></events-componant>
+        {{message}}
+
+        <slots-componant><b>Hello</b></slots-componant>
+    </div>
+
+
+
+
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2.7.8/dist/vue.js"></script>
+<script src="script.js"></script>
+
